@@ -1,12 +1,18 @@
+#include "main.h"
+
 /**
- * main - prints to string
- * Description: Prints positive, negative or zero
- * Return: 0
+ * main - Prints _putchar
+ *
+ * Return: Always 0 (Success)
  */
-#include <stdio.h>
 int main(void)
 {
-printf("_putchar");
-putchar ('\n');
-return (0);
+	int str[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
+	int i, size;
+
+	size = sizeof(str) / sizeof(int);
+	for (i = 0; i < size; i++)
+		_putchar(str[i]);
+	_putchar('\n');
+	return (0);
 }
